@@ -1,22 +1,26 @@
-// Write your solution in this file!
+// write your code here!!
+// Variable declarations
+var customerName = 'bob'; // Stores the name of the customer
+const leastFavoriteCustomer = 'some initial value'; // Stores the least favorite customer name (constant)
 
-var customerName = 'bob'
-const leastFavoriteCustomer = 'some initial value'
-
+// Function to convert customerName to uppercase
 function upperCaseCustomerName() {
-  customerName = customerName.toUpperCase()
+  customerName = customerName.toUpperCase(); // Converts customerName to uppercase
   
-  //notice that there is no return statement
+  // There's no return statement here, directly modifies customerName
 }
 
+// Function to set the best customer
 function setBestCustomer() {
-  bestCustomer = 'not bob'
+  bestCustomer = 'not bob'; // Sets the global variable bestCustomer
 }
 
+// Function to overwrite the best customer
 function overwriteBestCustomer() {
-  bestCustomer = 'maybe bob'
+  bestCustomer = 'maybe bob'; // Modifies the global variable bestCustomer
 }
 
+// Function to change the least favorite customer
 function changeLeastFavoriteCustomer() {
-  leastFavoriteCustomer = 'billy'
+  leastFavoriteCustomer = 'billy'; // Attempt to modify the leastFavoriteCustomer (will result in an error because it's a constant)
 }
